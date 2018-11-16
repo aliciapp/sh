@@ -1,0 +1,245 @@
+
+
+def menu():
+    o = 0
+    while o == 0:
+        choice = raw_input('Choose the option A B or C : ')
+        if choice == 'A':
+            shA()
+        elif choice == 'B':
+            shB()
+        elif choice == 'C':
+            shC()
+        else:
+            print 'Invalid'
+    return choice
+
+
+def shA():
+    z = 0
+    face = [40, 80]
+    Height = [120, 150, 180, 200, 220, 240]
+    Width = [90, 120]
+    print 'Height :', Height
+    print 'Width :', Width
+    print 'Depth: ', face
+
+    while z == 0:
+        H = int(input('Chose Height : '))
+        if H not in Height:
+            print 'Invalid Height'
+        else:
+            if H == 120 and 150:
+                rack1 = 1
+                rack2 = 3
+            elif H == 180 and 200:
+                rack1 = 1
+                rack2 = 4
+            elif H == 220 and 240:
+                rack1 = 1
+                rack2 = 5
+            W = int(input('Chose width : '))
+            if W not in Width:
+                print 'Invalid Width'
+            else:
+                if W == 90:
+                    rackw = 90
+                elif W == 120:
+                    rackw = 120
+                D = int(input('Choose Depth : '))
+                if D not in face:
+                    print 'Invalid Depth'
+                elif D == 40:
+                    L = 'L'
+                    am = int(input('How many beg shelf? : '))
+                    con = int(input('How many con shelf?: '))
+                    amount = (am * 2) + con
+                    Sum = am + con
+                    rackA = rack2 * Sum
+                    hang = rackA * 2
+                    print 'Amount L needed = ', amount, 'Height', H
+                    print 'Amount rack1 needed =', rack1 * Sum, 'Width', W
+                    print 'Amount rack 2 needed =', rackA, 'Width', W
+                    print 'Amount Hang needed =', hang
+                    print 'Amount Back needed =', Sum
+                    break
+                elif D == 80:
+                    T = 'T'
+                    am = int(input('How many beg shelf? : '))
+                    con = int(input('How many con shelf?: '))
+                    amount = (am * 2) + con
+                    Sum = am + con
+                    rackB = (rack2 * 2) * Sum
+                    hang = rackB * 2
+                    print 'Amount T needed = ', amount, 'Height', H
+                    print 'Amount rack1 needed =', (rack1 * 2) * Sum, 'Width', W
+                    print 'Amount rack 2 needed =', rackB , 'Width', W
+                    print 'Amount Hang needed =',hang
+                    break
+    return Sum
+
+
+def shB():
+    z = 0
+    face = [40, 80]
+    Height = [120, 150, 180, 200, 220, 240]
+    Width = [90, 120]
+    print 'Height :', Height
+    print 'Width :', Width
+    print 'Depth: ', face
+
+    while z == 0:
+        H = int(input('Chose Height : '))
+        if H not in Height:
+            print 'Invalid Height'
+        else:
+            if H == 120 and 150:
+                rack1 = 1
+                rack2 = 3
+            elif H == 180 and 200:
+                rack1 = 1
+                rack2 = 4
+            elif H == 220 and 240:
+                rack1 = 1
+                rack2 = 5
+            W = int(input('Chose width : '))
+            if W not in Width:
+                print 'Invalid Width'
+            else:
+                if W == 90:
+                    rackw = 90
+                elif W == 120:
+                    rackw = 120
+                D = int(input('Choose Depth : '))
+                if D not in face:
+                    print 'Invalid Depth'
+                elif D == 40:
+                    L = 'L'
+                    am = int(input('How many beg shelf? : '))
+                    con = int(input('How many con shelf?: '))
+                    amount = (am * 2) + con
+                    Sum = am + con
+                    rackA = rack2 * Sum
+                    hang = rackA * 2
+                    print 'Amount L needed = ', amount, 'Height', H
+                    print 'Amount rack1 needed =', rack1 * Sum, 'Width', W
+                    print 'Amount rack 2 needed =', rackA, 'Width', W
+                    print 'Amount Hang needed =', hang
+                    print 'Amount Back needed =', Sum
+                    break
+                elif D == 80:
+                    T = 'T'
+                    am = int(input('How many beg shelf? : '))
+                    con = int(input('How many con shelf?: '))
+                    amount = (am * 2) + con
+                    Sum = am + con
+                    rackB = (rack2 * 2) * Sum
+                    hang = rackB * 2
+                    print 'Amount T needed = ', amount, 'Height', H
+                    print 'Amount rack1 needed =', (rack1 * 2) * Sum, 'Width', W
+                    print 'Amount rack 2 needed =', rackB , 'Width', W
+                    print 'Amount Hang needed =',hang
+                    break
+    return Sum
+
+def shC():
+    global Sum
+    z = 0
+    face = [40, 80]
+    Height = [120, 150, 180, 200, 220, 240]
+    Width = [90, 120]
+    print 'Height :', Height
+    print 'Width :', Width
+    print 'Depth: ', face
+
+    while z == 0:
+        H = int(input('Chose Height : '))
+        if H not in Height:
+            print 'Invalid Height'
+        else:
+            if H == 120 and 150:
+                rack1 = 1
+                rack2 = 3
+            elif H == 180 and 200:
+                rack1 = 1
+                rack2 = 4
+            elif H == 220 and 240:
+                rack1 = 1
+                rack2 = 5
+            W = int(input('Chose width : '))
+            if W not in Width:
+                print 'Invalid Width'
+            else:
+                if W == 90:
+                    rackw = 90
+                elif W == 120:
+                    rackw = 120
+                D = int(input('Choose Depth : '))
+                if D not in face:
+                    print 'Invalid Depth'
+                elif D == 40:
+                    L = 'L'
+                    am = int(input('How many beg shelf? : '))
+                    con = int(input('How many con shelf?: '))
+                    amount = (am * 2) + con
+                    Sum = am + con
+                    rackA = rack2 * Sum
+                    hang = rackA * 2
+                    print 'Amount L needed = ', amount, 'Height', H
+                    print 'Amount rack1 needed =', rack1 * Sum, 'Width', W
+                    print 'Amount rack 2 needed =', rackA, 'Width', W
+                    print 'Amount Hang needed =', hang
+                    print 'Amount Back needed =', Sum
+                    break
+                elif D == 80:
+                    T = 'T'
+                    am = int(input('How many beg shelf? : '))
+                    con = int(input('How many con shelf?: '))
+                    amount = (am * 2) + con
+                    Sum = am + con
+                    rackB = (rack2 * 2) * Sum
+                    hang = rackB * 2
+                    print 'Amount T needed = ', amount, 'Height', H
+                    print 'Amount rack1 needed =', (rack1 * 2) * Sum, 'Width', W
+                    print 'Amount rack 2 needed =', rackB , 'Width', W
+                    print 'Amount Hang needed =',hang
+                    break
+    return Sum
+
+
+
+def colour(Sum):
+    colourlist = ['Red','Blue','Green']
+    col = (input('What colour?: '))
+    h = input('How many?: ')
+    rem = Sum - h
+    if rem != 0:
+        print 'What is the colour of', rem, 'remaining?'
+        o = input('What is the colour?')
+        hh = input('how many?')
+        rem = rem - hh
+        if rem != 0:
+            print 'What is the colour of', rem, 'remaining?'
+            quii = input('What is the colour?')
+            hhh = input('how many?')
+
+
+def colour2(Sum):
+    red = 'Red'
+    blue = 'Blue'
+    green = 'Green'
+    col = str(input('What colour do you want?: '))
+
+    if col != red:
+        print 'invalid col'
+    elif col != blue:
+        print 'invalid col'
+    elif col != green:
+        print 'invalid col'
+    else:
+        print col, Sum
+
+
+menu()
+
+
